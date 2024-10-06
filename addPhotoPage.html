@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title">ADA Report</h1>
+    </div>
+    <div id="formBox">
+      <form
+        action="putWhereDataGoesHere"
+        method="post"
+        enctype="multipart/form-data"
+        class="form"
+      >
+        <div>
+          <label for="imageUpload">Upload Your image</label>
+          <input
+            type="file"
+            id="imageUpload"
+            name="image"
+            accept="image/*"
+            required
+          /><br /><br />
+        </div>
+        <label for="nameInput">Name</label>
+        <input type="text" id="nameInput" name="theName" required /><br /><br />
+        <label for="textInput">Enter Description</label>
+        <textarea type="text" id="textInput" name="text" required></textarea
+        ><br /><br />
+
+        <!-- <input type="text" id="textInput" name="text" required /><br /><br />-->
+        <!--<a href="index.html"
+          ><input type="submit" value="Submit" id="submit"
+        /></a>-->
+        <input type="submit" value="Submit" id="submit" />
+        <a href="index.html" id="backButton">Back</a>
+      </form>
+    </div>
+  </body>
+</html>
